@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mi página de prueba</title>
+
+  <!-- Google Analytics (reemplaza G-XXXXXXXXXX con tu ID) -->
+  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script> -->
+
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: system-ui, sans-serif; background: #f9f9f7; color: #1a1a18; }
+
+    .page { max-width: 700px; margin: 0 auto; padding: 2rem 1.5rem; }
+
+    .hero {
+      text-align: center;
+      padding: 3rem 1rem 2rem;
+      border-bottom: 1px solid #e5e5e0;
+      margin-bottom: 2rem;
+    }
+    .badge {
+      display: inline-block;
+      background: #E1F5EE;
+      color: #0F6E56;
+      font-size: 12px;
+      padding: 4px 14px;
+      border-radius: 20px;
+      margin-bottom: 1rem;
+    }
+    .hero h1 { font-size: 28px; font-weight: 500; margin-bottom: 0.75rem; }
+    .hero p  { font-size: 16px; color: #555; line-height: 1.7; max-width: 480px; margin: 0 auto 1.5rem; }
+    .btn {
+      display: inline-block;
+      padding: 10px 24px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 14px;
+      text-decoration: none;
+      color: #1a1a18;
+      background: #fff;
+    }
+    .btn:hover { background: #f0f0ec; }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 12px;
+      margin-bottom: 2rem;
+    }
+    .card {
+      background: #fff;
+      border: 1px solid #e5e5e0;
+      border-radius: 12px;
+      padding: 1.25rem;
+    }
+    .card-icon {
+      width: 36px; height: 36px;
+      border-radius: 8px;
+      display: flex; align-items: center; justify-content: center;
+      margin-bottom: 12px;
+      font-size: 18px;
+    }
+    .card h3 { font-size: 14px; font-weight: 500; margin-bottom: 4px; }
+    .card p  { font-size: 13px; color: #666; line-height: 1.5; }
+
+    .about {
+      background: #f1efe8;
+      border-radius: 12px;
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+    }
+    .about h2 { font-size: 18px; font-weight: 500; margin-bottom: 0.75rem; }
+    .about p  { font-size: 15px; color: #555; line-height: 1.7; }
+
+    .footer {
+      text-align: center;
+      font-size: 13px;
+      color: #999;
+      padding-top: 1.5rem;
+      border-top: 1px solid #e5e5e0;
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+
+    <div class="hero">
+      <div class="badge">Mi primera página</div>
+      <h1>Hola, soy mi página de prueba</h1>
+      <p>Esta página fue creada para aprender a publicar en internet y configurar Google Analytics. ¡Bienvenido!</p>
+      <a class="btn" href="#">Conoce más</a>
+    </div>
+
+    <div class="cards">
+      <div class="card">
+        <div class="card-icon" style="background:#E6F1FB;">🚀</div>
+        <h3>Publicada gratis</h3>
+        <p>Alojada en GitHub Pages sin costo alguno.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon" style="background:#E1F5EE;">📊</div>
+        <h3>Con Analytics</h3>
+        <p>Registra visitas con Google Analytics.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon" style="background:#FAEEDA;">⚡</div>
+        <h3>Simple y rápida</h3>
+        <p>HTML puro, sin frameworks ni dependencias.</p>
+      </div>
+    </div>
+
+    <div class="about">
+      <h2>¿De qué trata este proyecto?</h2>
+      <p>Este es un ejercicio práctico para aprender a crear y publicar una página web desde cero, configurar herramientas de analítica y verificar que todo funcione correctamente.</p>
+    </div>
+
+    <div class="footer">
+      <p>Hecho con HTML · Publicado en GitHub Pages · 2025</p>
+    </div>
+
+  </div>
+</body>
+</html>
